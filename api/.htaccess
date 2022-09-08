@@ -1,0 +1,14 @@
+ RewriteEngine On
+     
+    RewriteRule ^(.*)$ public/$1 [L]
+    RewriteRule ^(.*)$ public/resources/views/admin$1 [L]
+RewriteRule ^(.*)$ public/storage$1 [L]
+RewriteRule ^(.*)$ public/resources/views/admin/providers/document$1 [L]
+
+ 
+	RewriteRule ^.*\.env$ - [F,L,NC]
+        RewriteRule ^.*\.gitignore$ - [F,L,NC]
+	RewriteRule ^.*\.gitattributes$ - [F,L,NC]
+        RewriteRule ^.*\.json$ - [F,L,NC]
+        RewriteRule ^.*\.DS_Store$ - [F,L,NC]
+	
